@@ -1,0 +1,15 @@
+ELEVENLABS VOICE SETTINGS
+
+Model:       Eleven v3 (understands audio tags like [whispers], [excited])
+Voice:       a young storyteller voice from the Voice Library
+Stability:   ~0.5 ("Natural")
+Similarity:  0.8
+Style:       0.3–0.4
+Speed:       1.05
+
+Workflow
+1. Paste the tagged script (elevenlabs_v3_tagged.txt).
+2. Generate.
+3. If a paragraph reads wrong, regenerate ONLY that paragraph.
+4. Download and save as 03_audio/narration.mp3.
+5. Get word timings next (commands/word-timings.txt).

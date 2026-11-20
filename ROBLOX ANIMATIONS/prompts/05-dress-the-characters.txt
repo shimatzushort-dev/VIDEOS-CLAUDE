@@ -1,0 +1,7 @@
+Dress the characters with official Roblox catalog items (creator "Roblox").
+1. Search shirts, pants and hair for: [DESCRIBE EACH CHARACTER'S LOOK].
+2. Build a contact sheet of the thumbnails so I can pick by eye. Flag anything that isn't really the item type it claims to be.
+3. Cache every download in 04_blender/assets/roblox/.
+4. Make a new UV map "RbxTemplate" on the rigs (in rest pose) that projects each polygon, by its dominant normal, into the matching rectangle of the 585×559 classic template, with a 0.6 px inset.
+5. Layer materials like Roblox does: torso = skin → pants → shirt, arms = skin → shirt, legs = skin → pants.
+6. Place hair with Handle = Head · HairAttachment(0, 0.6, 0) · HandleAttachment⁻¹, convert axes (x, y, z) → (x, −z, y), and parent to the head bone.

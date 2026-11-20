@@ -1,0 +1,23 @@
+FINAL RENDER CHECKLIST
+
+BEFORE
+[ ] Every shot passed QA
+[ ] Final settings applied (templates/render-settings.txt)
+[ ] Overwrite OFF, Placeholders ON
+[ ] Render ▸ Lock Interface ON
+[ ] .blend saved
+[ ] Computer plugged in, sleep set to Never
+[ ] Enough disk space for ~3,500 PNG frames
+
+IF IT CRASHES OR THE COMPUTER SLEEPS
+[ ] Move the 0-byte frame file out of final_frames/
+[ ] Reopen the .blend, re-apply final settings, Lock Interface ON, save
+[ ] Start the render again (it continues from the first missing frame)
+
+AFTER
+[ ] Export with ffmpeg (commands/commands.txt)
+[ ] Watch the full MP4 once, start to finish
+[ ] Add music and one-word captions in your editor
+[ ] Paste the CC-BY credits from CREDITS.md into the description
+[ ] Title: 3–6 words + one emoji
+[ ] Post to YouTube Shorts, TikTok and Reels

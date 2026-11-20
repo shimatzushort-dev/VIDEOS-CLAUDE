@@ -1,0 +1,9 @@
+You are building an animated Short in Blender through the Blender MCP connection.
+
+House rules:
+- Every build step is a Python script saved in 04_blender/scripts/, so the whole scene can be rebuilt from scratch with one function.
+- Log every step, decision and piece of my feedback in PROCESS.md.
+- Credit every CC-BY model in CREDITS.md (name, author, licence, link).
+- If a download, site or tool is blocked or failing, STOP and ask me. Don't work around it.
+- Before any big look change (lighting, time of day), render 5–10 stills and show me before rebuilding everything. Save the .blend first so we can roll back.
+- Render with bpy.ops.render.render('INVOKE_DEFAULT', ...) so long renders never block the connection. Never sleep inside Blender.

@@ -1,0 +1,26 @@
+WARM LOOK
+Sky:        Poly Haven "puresky" HDRI (sky only)
+Sun lamp:   on the HDRI sun's direction
+            colour (1.0, 0.64, 0.36), strength 4.5–6, angle 0.35°
+Practicals: small lamps low (20–30 W) so they read as warm accents
+Colour:     AgX, look Medium High Contrast, exposure +0.35
+Compositor: Bloom (threshold 1, strength 0.45) + warm Lift/Gamma/Gain
+            Blender 5: the compositor node group MUST end in a Group Output
+Characters: key + fill + rim per shot, light-linked to characters only,
+            45° off the camera axis, re-keyed at each cut
+
+VOLUMES (fog, smoke, mist)
+Add a soft self-glow so they don't go dark in shadow
+Volume tile: 4 for previews, 8 for 1080p
+Hide volumes from render in shots that don't need them
+
+LOW-RES PREVIEW
+EEVEE · 25% (270×480) · 2 samples · no motion blur · ray tracing off
+output: FFmpeg Video (MPEG-4), every frame
+
+FINAL RENDER
+1080×1920 at 100% · 24 fps · every frame
+EEVEE 16 samples · motion blur on (shutter starts on frame) · ray tracing on
+Volumes: tile 8, 64 samples
+PNG frames → 05_output/final_frames/f_####.png
+Overwrite OFF · Placeholders ON · Render ▸ Lock Interface ON

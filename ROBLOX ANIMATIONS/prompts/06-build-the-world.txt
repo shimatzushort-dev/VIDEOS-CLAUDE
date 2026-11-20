@@ -1,0 +1,5 @@
+Build [YOUR LOCATION] from free models only.
+Use Poly Haven (CC0) and Sketchfab (CC-BY, no NonCommercial).
+Read my Sketchfab token from .sketchfab_token and never print it.
+Scatter trees with Geometry Nodes instances. Credit every CC-BY model in CREDITS.md.
+Render 3 test stills and show me.

@@ -1,0 +1,38 @@
+SHOT-BY-SHOT QA CHECKLIST
+
+THE LOOP
+[ ] Render 3 stills per shot (start, middle, end) at 25–30%
+[ ] Put them on contact sheets (6–8 shots × 3 frames per image)
+[ ] Look at EVERY frame yourself
+[ ] For each problem: root cause in the script → fix at the source → rebuild → re-render only those shots
+[ ] New low-res preview to check motion between stills
+[ ] Repeat until every shot passes
+
+CHECK EVERY SHOT FOR
+[ ] Everyone who should be in the shot is visible for the whole shot
+[ ] We see faces, not the backs of heads
+[ ] Feet are on the ground / deck, not inside it or floating
+[ ] The camera is not inside a character, a prop or under the floor
+[ ] Characters riding something move WITH it
+[ ] Every close-up shows the character, not an object floating alone
+[ ] The face expression matches the line
+[ ] The cut lands on the right word
+[ ] Fog/smoke is visible, with no checkerboard pattern
+[ ] Nothing slides or pops at the cut
+
+COMMON BUGS → FIXES
+Characters vanish mid-shot        → a key on the cut frame: end every key at shot end − 1
+Character invisible               → check Head Type (3 = Woman Head) and props in the way
+Backs of heads                    → place the camera on the side the character faces (+Y rig)
+Feet inside the floor             → ground() helper: use the real floor height
+Rider slides off what it rides    → use the same keyframe type as the vehicle
+Object floating alone in frame    → make it a two-shot with the character
+Camera inside geometry            → re-stage, re-path, remove props in the way
+Fog/smoke invisible or dark       → more density + a soft self-glow
+Checkerboard fog                  → volume tile 4 for previews, 8 for 1080p
+Camera spins 360° between keys    → compatible Euler conversion
+Motion smears into the next shot  → motion-blur shutter starts on the frame
+
+BEFORE A BIG LOOK CHANGE
+[ ] Save the .blend
+[ ] Render 5–10 stills of the new look and approve them first

@@ -1,0 +1,16 @@
+Animate shots [SHxx]–[SHyy] from the shot breakdown in 02_script/script_v1.md.
+Cut every shot on the matching word in 03_audio/narration_words.json (24 fps).
+
+Rules:
+- One camera per shot (CAM_SHxx), bound to a timeline marker.
+- pose() keys all 13 FK bones every time. Bezier auto-clamped.
+- idle() adds breathing, head drift and arm sway so nobody freezes.
+- At each cut, move everyone not in the shot off-screen with constant keys.
+- NEVER put a key on the cut frame: every in-shot key ends at the shot's last frame − 1.
+- ground(x, y) returns the real floor height (deck, bridge or terrain) so feet never sink.
+- Place the camera on the side the character faces (the rig faces +Y). No backs of heads.
+- Convert camera rotations with compatible Euler so cameras never spin 360°.
+- Anything riding something (boat, cart) uses the same key interpolation as what it rides.
+- Motion blur shutter starts on the frame so cuts never smear.
+
+When done, render 3 stills per shot (start, middle, end) at 25% and show me a contact sheet.

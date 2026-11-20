@@ -1,0 +1,9 @@
+Write an original ~410-word script for a 2-minute vertical Short.
+Kid narrator, first person, short sentences, kid-safe, hopeful.
+Follow this 10-beat structure: [PASTE TABLE]
+World rule: [YOUR RULE]
+
+Then give me:
+1. A shot breakdown: one row per line (camera, action, effects, face).
+2. The same script with ElevenLabs v3 tags like [whispers] and [excited].
+3. 5 titles: 3–6 words + one emoji.

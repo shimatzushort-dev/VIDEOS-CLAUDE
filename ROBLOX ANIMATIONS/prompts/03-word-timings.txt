@@ -1,0 +1,6 @@
+Write 03_audio/align_words.py. It should:
+1. Decode the MP3 with ffmpeg to 16 kHz float PCM (faster-whisper's own decoder can crash).
+2. Transcribe with faster-whisper with word timestamps.
+3. Match the transcribed words to the words in 02_script/script_v1.md with difflib, so the output uses the script's exact spelling.
+4. Save 03_audio/narration_words.json as a list of {word, start, end}.
+5. Print how many script words were matched.

@@ -1,0 +1,5 @@
+Here are the transcripts of the 10 most-viewed Shorts from one channel.
+Give me the story beats they all share, as a table: beat, timestamp, what happens, opening line.
+Only what repeats. No summaries.
+
+[PASTE TRANSCRIPTS]

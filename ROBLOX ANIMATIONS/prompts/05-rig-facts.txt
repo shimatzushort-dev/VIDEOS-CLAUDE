@@ -1,0 +1,7 @@
+Facts about the Roblox Starter Rigs "Blocky" rig:
+- It faces +Y. Cameras, hair and staging must assume that.
+- Bones: Master → FlipBone → Lowertorso / Hips / Uppertorso / Head; limbs Upperarm → Lowerarm → Hand and Upperleg → Lowerleg → Foot (.L and .R).
+- Animate the 13 bones in FK (IK/FK Switch = 0).
+- FK axes: Upperarm +X = swing forward. Raise sideways = Upperarm.R −Z, Upperarm.L +Z. Head +X = look up, Y = turn, Z = tilt.
+- Limb meshes are modelled along local Y, so any "up" gradient in a material uses Generated Y, not Z.
+- Head visibility is driven by Settings["Head Type"]: 1 = Head, 2 = Man Head, 3 = Woman Head.

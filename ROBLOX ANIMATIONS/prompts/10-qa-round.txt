@@ -1,0 +1,5 @@
+Here are the problems I see on the contact sheets:
+- [SHxx]: [what's wrong on screen]
+- [SHyy]: [what's wrong on screen]
+
+For each one: find the root cause in the scripts (not just this shot), fix it at the source, rebuild with build_full(), and re-render 3 stills for every affected shot. Log each fix in PROCESS.md.
